@@ -1,5 +1,4 @@
-Google Style Guides
-===================
+# Google Style Guides
 
 Every major open-source project has its own style guide: a set of conventions
 (sometimes arbitrary) about how to write code for that project. It is much
@@ -13,7 +12,7 @@ style guidelines we use for Google code. If you are modifying a project that
 originated at Google, you may be pointed to this page to see the style guides
 that apply to that project.
 
-This project holds the [C++ Style Guide][cpp], [C# Style Guide][csharp], 
+This project holds the [C++ Style Guide][cpp], [C# Style Guide][csharp],
 [Swift Style Guide][swift], [Objective-C Style Guide][objc],
 [Java Style Guide][java], [Python Style Guide][py], [R Style Guide][r],
 [Shell Style Guide][sh], [HTML/CSS Style Guide][htmlcss],
@@ -33,6 +32,23 @@ See [https://creativecommons.org/licenses/by/3.0/][ccl] for more details.
 
 The following Google style guides live outside of this project:
 [Go Code Review Comments][go] and [Effective Dart][dart].
+
+### 定制 Java Code Style
+
+为了增加代码的「美感」, 进行了部分定制。
+
+#### IntelliJ-IDEA 定制
+
+修改 `intellij-java-google-style.xml` 中的内容:
+
+| 项                         | 原始取值 | 定制之后 | 定制时间 | 备注                        |
+| :------------------------- | :------- | :------- | :------- | :-------------------------- |
+| `INDENT_SIZE`              | 2        | 4        | 20180731 | 行缩进                      |
+| `TAB_SIZE`                 | 2        | 4        | 20180731 | TAB 缩进                    |
+| `CONTINUATION_INDENT_SIZE` | 2 or 4   | 8        | 20180731 | 换行缩进                    |
+| `RIGHT_MARGIN`             | 100      | 120      | 20180731 | 单行的长度                  |
+| `JD_PRESERVE_LINE_FEEDS`   | 无       | true     | 20180731 | 注释中, 保留手动的换行      |
+| `KEEP_LINE_BREAKS`         | 无       | true     | 20180731 | Java 代码中, 保留手动的换行 |
 
 <a rel="license" href="https://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a>
 
